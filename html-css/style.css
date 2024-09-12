@@ -1,84 +1,120 @@
-div{
-    width: 75%;
-    margin: auto;
-}
-p{
-    color: rgb(61, 9, 252);
-    background-color: cyan;
-    border: 2px solid blue;
-}
-html{
-    background-image: url(image/clasik.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}ul{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background: yellow;
-    list-style: none;
+* {
     margin: 0;
-    padding-left: 0;
 }
 
-li{
-    color: darkturquoise;
+.content {
+    margin-top: 2%;
 }
-ul li{
-    color: chartreuse;
-    background: blue;
-    display: block;
-    border: 1px greenyellow;
+
+.wrapper {
+    width: 80%;
+    margin: auto;
+}
+
+header img {
+    margin: 0 0;
+    width: 70px;
     float: left;
+}
+
+header h1 {
+    margin: 2% 0 -5% -3%;
+}
+
+nav {
+    clear: both;
+}
+
+nav ul {
+    margin: 4% 0 0;
+}
+
+section {
+    margin-top: 2%;
+}
+
+section p {
+    margin-top: 2%;
+}
+
+footer {
+    margin: 2%;
+    text-align: center;
+}
+
+#huruf {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.warna {
+    color: rgb(0, 34, 255);
+}
+
+.model {
+    font-style: italic;
+}
+
+.ukuran {
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    font-family: Arial, Helvetica, sans-serif;
+    background: darkcyan;
+    list-style: none;
+    margin: 0;
+    padding-left: 0px;
+}
+
+ul li {
+    color: antiquewhite;
+    background: darkcyan;
+    display: inline-block;
+    border: 1px blue;
     padding: 10px;
     position: relative;
     text-decoration: none;
 }
 
-ul li a{
-    color: darkorange;
+ul li a {
+    color: antiquewhite;
 }
 
 ul li:hover{
-    background: red;
+    background: lawngreen;
     cursor: pointer;
 }
-h1{
-    color:aqua;
-    border: 2px dashed red;
-    position: sticky;
-    top: 15px;
+
+ul li ul {
+    background: darkcyan;
+    visibility: hidden;
+    position: absolute;
+    margin-top: 0.6rem;
+    left: 0;
+    display: none;
 }
 
-h2{
-    color:rgb(250, 9, 9);
-}
-legend{
-    color: rgb(252, 65, 9);
-}
-label{
-    color: lime;
-}
-table{
-    color: darkturquoise;
+ul li:hover > ul,
+ul li ul:hover {
+    visibility: visible;
+    display: block;
 }
 
-img{
-    border: 7px solid rgb(255, 0, 255) ;
-   
+ul li ul li {
+    clear: both;
+    width: 100%;
 }
 
-#huruf{
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.warna{
-    color: aqua;
-}
-
-#ukuran{
-    font-size: 25px;
-}
-
-.model{
-    font-weight: bold;
+@media only screen and (max-width: 600px) {
+    .wrapper {
+        width: 1000px;
+        margin: auto;
+    }
+    body {
+        background: darksalmon;
+    }
 }
